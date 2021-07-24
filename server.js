@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const PORT = process.env.PORT || 3001;
 const app = express();
-const { uuid } = require('uuidv4');
+const { v4: uuidv4 } = require('uuid');
 const { notes } = require('./db/db.json');
 
 //parse incoming string or array data
@@ -33,7 +33,7 @@ app.get('/api/notes', (req, res) => {
 
 //create new note route
 app.post('/api/notes', (req, res) => {
-    req.body.id = uuid();
+    req.body.id = uuidv4();
     console.log('id', req.body.id);
     const newNote = createNewNote(req.body, notes);
     res.json(newNote);
