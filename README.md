@@ -10,6 +10,9 @@ Run npm install first to install necessary file. Then run either npm start or no
 Here is a preview of the Note Taker web page:
 </br></br>
 
+![image](https://user-images.githubusercontent.com/81452611/126854904-09381b3b-e8f7-4cc3-a69f-cf313657c632.png)
+</br>
+![image](https://user-images.githubusercontent.com/81452611/126854933-28ce9d0d-77c2-4b52-96aa-1b446970b5ac.png)
 
 
 ## Deployed Application
